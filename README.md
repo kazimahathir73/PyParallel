@@ -44,3 +44,7 @@ To get started quickly with PyParallel, check out the following example demonstr
 ## Documentation
 
 For detailed documentation, and advanced examples, please refer to the [PyParallel Documentation](https://github.com/kazimahathir73/PyParallel/docs/manual.md).
+
+## License
+
+PyParallel is licensed under the MIT License. See [LICENSE](https://github.com/kazimahathir73/PyParallel/LICENSE.txt) for more information.
