@@ -1,5 +1,6 @@
-torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
-psutil
-GPUtil
-dash
-plotly
+torch>=2.0.0
+torch-xla>=2.5.0
+psutil>=6.1.0
+GPUtil>=1.4.0
+dash>=2.0.0
+plotly>=5.0.0
