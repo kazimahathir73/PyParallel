@@ -39,7 +39,7 @@ pip install pyparallel
 ```
 ## Quickstart
 
-To get started quickly with PyParallel, check out the following example demonstrating model training with data parallelism and optimization techniques. This example is also available as a Jupyter notebook for interactive use: [Demo Notebook](https://github.com/kazimahathir73/PyParallel/example/demo_training.ipynb/).
+To get started quickly with PyParallel, check out the following example demonstrating model training with data parallelism and optimization techniques. This example is also available as a Jupyter notebook for interactive use: [Demo Notebook](https://github.com/kazimahathir73/PyParallel/example/demo_training.ipynb).
 
 ## Documentation
 
