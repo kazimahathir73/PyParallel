@@ -6,7 +6,7 @@ from collections import deque
 
 from device_utils import device_info
 
-def hardware_monitor():
+def device_monitor():
 
     devices = device_info()
     gpu_available = devices["GPU"]["Available"]
@@ -123,3 +123,5 @@ def hardware_monitor():
         return [cpu_fig] + ([gpu_fig] if gpu_available else []) + ([tpu_fig] if tpu_available else [])
 
     app.run_server(debug=True)
+
+device_monitor()
