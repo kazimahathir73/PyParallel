@@ -4,11 +4,12 @@ import psutil
 import GPUtil
 from collections import deque
 
-from device_utils import device_info
+from .device_utils import device_info
 
 def device_monitor():
 
     devices = device_info()
+    
     gpu_available = devices["GPU"]["Available"]
     tpu_available = devices["TPU"]["Available"]
 
@@ -123,5 +124,3 @@ def device_monitor():
         return [cpu_fig] + ([gpu_fig] if gpu_available else []) + ([tpu_fig] if tpu_available else [])
 
     app.run_server(debug=True)
-
-device_monitor()

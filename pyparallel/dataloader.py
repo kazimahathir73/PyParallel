@@ -1,12 +1,14 @@
 import psutil
 import torch
-from device_utils import detect_device, device_info
+from .device_utils import detect_device, device_info
 from torch.utils.data import DataLoader, DistributedSampler
 import torch.distributed
 
-device_type, core_num = detect_device()
 
 def check_memory(data, batch_size, num_core=None):
+
+    device_type, core_num = detect_device()
+    
     if not isinstance(data, torch.Tensor):
         raise TypeError("Input data must be a PyTorch tensor.")
     

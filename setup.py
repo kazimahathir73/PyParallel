@@ -14,14 +14,6 @@ setup(
     url="https://github.com/kazimahathir73/PyParallel/",
     packages=find_packages(),
     install_requires=requirements,
-    install_requires=[
-        "dash>=2.0.0",
-        "plotly>=5.0.0",
-        "psutil>=6.1.0",
-        "GPUtil>=1.4.0",
-        "torch>=2.0.0",
-        "torch-xla>=2.5.0"
-    ],
     classifiers=[
         "Programming Language :: Python :: 3.8",
         "License :: OSI Approved :: MIT License",

@@ -92,3 +92,13 @@ def device_info():
         print()
 
     return device_info
+
+def device_recommend():
+    device, cores = detect_device()
+    
+    if device == "tpu":
+        print("Recommendation: TPU detected. Best suited for large-scale model parallelism.")
+    elif device == "gpu":
+        print(f"Recommendation: {cores} GPU(s) detected. Suitable for data and model parallelism with CUDA support.")
+    else:
+        print(f"Recommendation: No TPU or GPU detected. Using CPU with {cores} cores.")

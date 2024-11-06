@@ -1,5 +1,5 @@
-from optimization import checkpointing, mixed_precision, use_scaler, gradient_clipping, gradient_accumulation, split_model
-from device_utils import detect_device
+from .optimization import checkpointing, mixed_precision, use_scaler, gradient_clipping, gradient_accumulation, split_model
+from .device_utils import detect_device
 
 device_type, core_num = detect_device()
 
