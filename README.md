@@ -22,13 +22,24 @@ Video Tutorial -
 
 To install **PyParallel**, you can use the following steps:
 
+  ### 
+  
+
+
+
 1. Clone the repository:
    ```bash
    git clone https://github.com/kazimahathir73/PyParallel.git
    cd PyParallel
    ```
+2. TPU support (Optional):
+   
+   For using TPU, install `torch-xla` manually
+   ```bash
+   pip install torch-xla -f https://storage.googleapis.com/tpu-pytorch/wheels/colab.html
+   ```
 
-2. Install the library and its dependencies:
+4. Install the library and its dependencies:
    ```bash
    pip install .
    ```
